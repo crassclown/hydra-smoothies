@@ -12,7 +12,7 @@
         <i class="material-icons delete" @click="deleteIng(ing)">delete</i>
       </div>
       <div class="field add-ingredient">
-        <label for="add-ingredient">Add an Ingredient:</label>
+        <label for="add-ingredient">Add an Ingredient (press tab to add new ingredient):</label>
         <input type="text" name="add-ingredient" @keydown.tab.prevent="addIng" v-model="another">
       </div>
       <div class="field center-align">
