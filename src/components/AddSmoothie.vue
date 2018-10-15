@@ -12,8 +12,9 @@
         <i class="material-icons delete" @click="deleteIng(ing)">delete</i>
       </div>
       <div class="field add-ingredient">
-        <label for="add-ingredient">Add an Ingredient (press tab to add new ingredient):</label>
+        <label for="add-ingredient">Add an Ingredient (press tab to add new ingredient or click add button):</label>
         <input type="text" name="add-ingredient" @keydown.tab.prevent="addIng" v-model="another">
+        <i class="material-icons newing" @click="addIng">add</i>
       </div>
       <div class="field center-align">
         <p v-if="feedback" class="red-text">{{ feedback }}</p>
@@ -98,6 +99,14 @@ export default {
   right: 0;
   bottom: 16px;
   color: #aaa;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.add-smoothie .newing{
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  color: pink;
   font-size: 1.4em;
   cursor: pointer;
 }

@@ -2,7 +2,7 @@ import firebase from 'firebase'
 import firestore from 'firebase/firestore'
 
 // Initialize Firebase
-var config = {
+let config = {
   apiKey: "AIzaSyBOKFhV0FhmtN3NeJkRIlCjzi51vmq-sC4",
   authDomain: "hydra-smoothies.firebaseapp.com",
   databaseURL: "https://hydra-smoothies.firebaseio.com",
